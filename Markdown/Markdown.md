@@ -127,7 +127,7 @@ typora
     |      |      |      |
 
 
-  ---
+---
 
 - text 강조
 
@@ -137,34 +137,32 @@ typora
     **굵게**
     ```
     
-
   - *기울림*: `*`
-
+  
   - ```
     *기울림*
     ```
-
+  
     
-
+  
   - ~~취소선~~ : `~~`
-
+  
   - ```
     ~~취소선~~
     ```
-
+  
     
-
+  
   - 수평선 : `---` 
     ---
-
+  
   - ```
     ---
     ```
-
+  
   ---
-
+  
 - 소스 코드 모드
 
-  - 타이포라 하단에 </> 버튼 누르면 plain text (맥은 cmd + /)
+  - 타이포라 하단에 </> 버튼 누르면 plain text (맥은 cmd + /)![sourcecode](Markdown.assets/sourcecode.png)
   
-    <img width="861" alt="스크린샷 2022-07-05 오후 12 07 14" src="https://user-images.githubusercontent.com/48798620/177496714-831341d5-2c35-42a2-90ee-4c05b383cd2d.png">
