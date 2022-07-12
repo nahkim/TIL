@@ -1,6 +1,14 @@
 numbers = [3, 10, 20]
 
-arv = 0
+avr = 0
 for i in numbers:
-    arv += i
-print(int(arv / len(numbers)))
+    avr += i
+print(int(avr / len(numbers)))
+
+# 방법 2
+result = 0
+count = 0
+for number in numbers:
+    result += number
+    count += 1
+print(result/count)
