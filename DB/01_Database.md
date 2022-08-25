@@ -98,7 +98,17 @@
 
 
 
-표 작성
+
+
+|      Example Typenames From The CREATE TABLE Statement       | Resulting Affinity |
+| :----------------------------------------------------------: | :----------------: |
+| INT<br />INTEGER<br />TINYINT<br />SMALLINT<br />MEDIUMINT<br />BIGINT<br />UNSIGNED BIG INT<br />INT2<br />INT8 |      INTEGER       |
+| CHARACTER(20)<br />VARCHAR(255)<br />VARYING CHARACTER(255)<br />NCHAR(55)<br />NATIVE CHARACTER(70)<br />NVARCHAR(100)<br />TEXT<br />CLOB |        TEXT        |
+|              BLOB<br />(no datatype specified)               |        BLOB        |
+|      REAL<br />DOUBLE<br />DOUBLE PRECISION<br />FLOAT       |        REAL        |
+| NUMERIC<br />DECIMAL(10, 5)<br />BOOLEAN<br />DATE<br />DATETIME |      NUMERIC       |
+
+
 
 
 
@@ -115,7 +125,13 @@
 
 
 
-표
+| 분류                                                     | 개념                                                         | 예시                                        |
+| -------------------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------- |
+| DDL - 데이터 정의 언어<br />(Data Definition Language)   | 관계형 데이터베이스 구조(테이블, 스키마)를 정의하기 위한 명령어 | CREATE<br />DROP<br />ALTER                 |
+| DML - 데이터 조작 언어<br />(Data Manipulation Language) | 데이터를 저장, 조회, 수정, 삭제 등을 하기 위한 명령어        | INSERT<br />SELECT<br />UPDATE<br />DELETE  |
+| DCL - 데이터 제어 언어<br />(Data Control Language)      | 데이터베이스 사용자의 권한 제어를 위해 사용하는 명령어       | GRANT<br />REVOKE<br />COMMIT<br />ROLLBACK |
+
+
 
 
 
@@ -229,9 +245,12 @@ DROP TABLE classmates;
 
 ---
 
-
-
-표
+|  -   |  구문  |                             예시                             |
+| :--: | :----: | :----------------------------------------------------------: |
+|  C   | INSERT | **INSERT INTO** 테이블이름 (컬럼1, 컬럼2, ... ) **VALUES** (값1, 값2); |
+|  R   | SELECT |       **SELECT** * **FROM** 테이블이름 **WHERE** 조건;       |
+|  U   | UPDATE | **UPDATE** 테이블이름 **SET** 컬럼1=값1, 컬럼2=값2 **WHERE** 조건; |
+|  D   | DELETE |          **DELETE FROM** 테이블이름 **WHERE** 조건;          |
 
 
 
@@ -316,4 +335,44 @@ SELECT DISTINCT 컬럼1, 컬럼2 FROM 테이블이름 LIMIT 숫자1 OFFSET 숫�
 
 **UPDATE**
 
+- UPDATE
+
+  - "update data of existing rows in the table"
+
+  - 기존 행의 데이터를 수정
+
+  - SET clause에서 테이블의 각 열에 대해 새로운 값을 설정
+
+  - ```sqlite
+    UPDATE 테이블이름 SET 컬럼1=값1, 컬럼2=값2 WHERE 조건;
+    ```
+
+    
+
 **DELETE**
+
+- DELETE
+
+  - 데이터 삭제
+
+  - "remove rows from a table"
+
+  - 테이블에서 행을 제거
+
+  - ```sqlite
+    DELETE FROM 테이블이름 WHERE 조건;
+    # 중복 불가능한 (UNIQUE) 값인 rowid를 기준으로 삭제하기
+    ```
+
+- AUTOINCREMENT
+
+  - SQLite가 사용되지 않은 값이나 이전에 삭제된 행의 값을 재사용하는 것을 방지
+
+  - ```sqlite
+    CREATE TABLE students(
+    	id INTEGER PRIMARY KEY AUTOINCREMENT,
+      name TEXT NOT NULL
+    );
+    ```
+
+    
