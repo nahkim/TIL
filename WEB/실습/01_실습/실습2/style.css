@@ -1,0 +1,48 @@
+/* 아래에 CSS를 작성해주세요. */
+
+.section {
+  width: 300px;
+  margin: 5px;
+}
+
+.item_img {
+  /* width: 25rem;
+  height: 27rem; */
+  width: 100%;
+}
+
+.brand {
+  color: darkgray;
+  margin: 5px;
+}
+
+.item_name {
+  margin: 5px;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.discount {
+  color: rgb(63, 184, 221);
+  font-size: 1.3rem;
+  font-weight: 900;
+  margin: 5px;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin: 5px;
+}
+
+.rating {
+  color: rgb(66, 66, 66);
+  font-weight: bold;
+  margin: 5px;
+}
+
+.review {
+  color: darkgrey;
+  font-weight: bold;
+  margin: 5px;
+}

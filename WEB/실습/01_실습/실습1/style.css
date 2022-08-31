@@ -1,0 +1,48 @@
+/* 아래에 CSS를 작성해주세요. */
+
+.title_section {
+  text-align: center;
+  display: block;
+  margin-bottom: 0px;
+}
+
+.item_section {
+  text-align: left;
+  float: left;
+  margin: 10px;
+}
+
+.item {
+  font-size: 12px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.minititle {
+  font-size: 10px;
+  font-weight: 300;
+  margin: 10px;
+  border: 0px;
+}
+
+.subtitle {
+  text-align: center;
+  display: block;
+  font-size: 10px;
+  letter-spacing: 1px;
+  margin: 5px auto;
+}
+
+.list-image {
+  width: 14rem;
+  height: 14rem;
+  border-radius: 6%;
+  vertical-align: middle;
+  margin: -10px 8px 0px;
+}
+
+.explanation {
+  color: darkgray;
+  font-size: 1px;
+  margin: 10px;
+}
