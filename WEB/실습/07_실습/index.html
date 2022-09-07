@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+<body>
+    <!-- 크기조절 팝업창 -->
+    <!-- 수직 정렬 필요 -->
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">- Overview Page</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="navbar-brand" href="#">
+                <img class="m-2" src="data:image/png;base64,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" alt="" width="13" height="13">
+              </a>
+            </li>
+            <li class="nav-item">
+              <button type="button" class="btn btn-sm btn-outline-danger mx-2">Free Download</button>
+            </li>
+            <li class="nav-item">
+              <button type="button" class="btn-close fs-0 mx-2" aria-label="Close"></button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- 배너 -->
+    <nav class="navbar navbar-expand-lg bg-dark mb-5">
+      <div class="container container-fluid">
+        <a class="navbar-brand text-bg-dark" href="#">Start Bootstrap</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="container collapse navbar-collapse justify-content-end navbar-dark" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <!-- 사진 및 설명, 버튼 -->
+      <div class="row my-3 align-items-center">
+        <div class="col">
+          <img class="img-fluid rounded" src="https://dummyimage.com/900x400/d4d4db/616161" alt="dummy image">
+        </div>
+        <div class="col">
+          <h1>Business Name or Tagline</h1>
+          <p>This is a template that is great for small businesses. It doesn't have too much fancy flare to it, but it makes a great use of the standard Bootstrap core components. Feel free to use this template for any project you want!</p>
+          <button type="button" class="btn btn-primary">Call to Action!</button>
+        </div>
+      </div>
+      <!-- 알림 -->
+      <div class="card text-white bg-secondary my-5 py-4 text-center">
+        This call to action card is a great place to showcase some important information or display a clever tagline!
+      </div>
+      <!-- 카드형식 -->
+      <div class="row my-5">
+          <div class="card col mx-3 p-0">
+            <div class="card-body">
+              <h2 class="card-title">Card One</h2>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
+            </div>
+            <div class="card-footer">
+              <button type="button" class="btn btn-primary">More Info</button>
+            </div>
+          </div>
+          <div class="card col mx-3 p-0">
+            <div class="card-body">
+              <h2 class="card-title">Card Two</h2>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod tenetur ex natus at dolorem enim! Nesciunt pariatur voluptatem sunt quam eaque, vel, non in id dolore voluptates quos eligendi labore.</p>
+            </div>
+            <div class="card-footer">
+              <button type="button" class="btn btn-primary">More Info</button>
+            </div>
+          </div>
+          <div class="card col mx-3 p-0">
+            <div class="card-body">
+              <h2 class="card-title">Card Three</h2>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
+            </div>
+            <div class="card-footer">
+              <button type="button" class="btn btn-primary">More Info</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <div class="p-5 text-center bg-black text-white">
+    Copyright © Your Website 2022
+  </div>
+  
+  <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>
