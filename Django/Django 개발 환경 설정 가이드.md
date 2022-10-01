@@ -1,5 +1,7 @@
 ### 가상 환경
 
+---
+
 
 
 가상환경 생성
@@ -72,5 +74,47 @@ localhost:8000
 / : root 경로
 
 ~ : home 경로
+```
+
+
+
+---
+
+
+
+
+
+#### git 에 올릴시
+
+---
+
+
+
+1. 가상환경 ignore 생성
+
+(.gitignore에 venv/ 추가)
+
+
+
+.gitignore
+
+```bash
+venv/
+```
+
+
+
+2. 패키지 공유 (패키지 목록 생성)
+
+```bash
+pip freeze > requirements.txt
+```
+
+
+
+가상환경 패키지 설치
+
+```bash
+pip install -r requirements.txt
 ```
 
