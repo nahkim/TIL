@@ -8,7 +8,7 @@
 
 ```bash
 # python -m venv [가상 환경 이름]
-python -m venv server-venv
+python -m venv venv
 ```
 
 
@@ -17,10 +17,12 @@ python -m venv server-venv
 
 ```bash
 # window
-source server-venv/Scripts/activate
+# source [가상 환경 이름]/Scripts/activate
+source venv/Scripts/activate
 
 # mac
-source server-venv/bin/activate
+# . [가상 환경 이름]/bin/activate
+. venv/bin/activate
 ```
 
 
